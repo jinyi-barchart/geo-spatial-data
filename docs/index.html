@@ -16,7 +16,7 @@
         name: 'cmdty Crop Geo-spatial Data',
         repo: 'git+https://github.com/barchart/cmdty-doc-grain-price',
         loadSidebar: true,
-        coverpage: true,
+        coverpage: false,
         relativePath: false,
         onlyCover: true,
         notFoundPage: true,
@@ -25,7 +25,10 @@
         noCompileLinks: [
         	'/static/*.*',
             '/*static/*.*'
-        ]
+        ],
+	alias: {
+		'/': '/content/product_overview'
+	}
     }
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
